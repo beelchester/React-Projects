@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  background-color: #282D35;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}

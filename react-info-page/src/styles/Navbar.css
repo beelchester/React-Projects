@@ -1,0 +1,23 @@
+.navbar{
+  display: flex;
+  height: 100px;
+  background-color: #21222A;
+  align-items: center;
+  padding: 22px;
+}
+
+.navbar > img {
+  width: 50px;
+  padding-right: 10px;
+}
+.navbar > h1{
+  font-family: 'Inter', sans-serif;
+  color: #61DAFB;
+  margin-right: auto;
+  font-weight: 700;
+}
+.navbar > h3{ 
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #DEEBF8;
+}

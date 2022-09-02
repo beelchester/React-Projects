@@ -10,3 +10,8 @@
   border-radius: 8px;
   height: 33px;
 }
+.linkedin > img {
+  border-radius: 0px;
+  width: 20px;
+  margin-right: 5px;
+}

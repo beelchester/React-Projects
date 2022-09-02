@@ -2,4 +2,14 @@
   height: 40px;
   background-color: #161619;
   border-radius: 0 0 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer > img {
+  border-radius: 0px;
+  width: 28px;
+  margin-left: 10px;
+  margin-right: 10px;
 }

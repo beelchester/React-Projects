@@ -1,0 +1,15 @@
+.body{
+  color: white;
+  max-width: 250px;
+
+  margin: 0 0 30px 45px;
+}
+
+.body > h2 {
+margin-bottom: 0;
+font-size: 18px;
+}
+.body > p {
+margin-top: 8px;
+font-size: 12px;
+}

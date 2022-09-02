@@ -1,0 +1,35 @@
+.info{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img{
+  width: 350px;
+  border-radius: 10px 10px 0 0 ;
+}
+.name{
+  margin: 30px 0 0 0;
+  font-size: 25px;
+  word-spacing: 2px;
+}
+.profession{
+  color: #F3BF99;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.info > p {
+  margin-top: 0px;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.buttons{
+  margin-top: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+}

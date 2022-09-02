@@ -1,0 +1,12 @@
+.linkedin{
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background-color: #5093E2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  border-radius: 8px;
+  height: 33px;
+}

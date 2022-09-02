@@ -10,9 +10,9 @@
   border-radius: 8px;
   height: 33px;
   margin-right: 20px;
-  
+  text-decoration: none;
 }
-.email > img{
+.email >  img{
 width: 23px; 
 margin-right: 5px;
 }

@@ -7,9 +7,10 @@
   justify-content: center;
 }
 
-.footer > img {
+.footer > a > img {
   border-radius: 0px;
   width: 28px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: 4px;
 }

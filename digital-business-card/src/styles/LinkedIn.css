@@ -9,6 +9,7 @@
   width: 120px;
   border-radius: 8px;
   height: 33px;
+  text-decoration: none;
 }
 .linkedin > img {
   border-radius: 0px;

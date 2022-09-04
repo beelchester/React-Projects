@@ -1,0 +1,24 @@
+.imageContainer{
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding: 10px;
+}
+.imageContainer > img{
+  max-width: 500px;
+}
+
+.textContainer{
+  max-width: 350px;
+  padding: 10px;
+}
+.textContainer > h1 {
+  font-size: 36px;
+}
+.textContainer > p {
+  font-size: 16px;
+  padding: 5px;
+  
+}

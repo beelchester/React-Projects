@@ -1,0 +1,19 @@
+.button {
+  background: none;
+  color: white;
+  border: none;
+  background: linear-gradient(90deg, #673580 0.5%, #A626D3 100%);
+  width: 87%;
+  height: 48px;
+  border-radius: 8px;
+font-family: "Karla";
+font-weight: 700;
+font-size: 17px;
+}
+.button-body{
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

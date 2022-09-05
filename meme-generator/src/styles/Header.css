@@ -1,0 +1,21 @@
+.header{
+  background: linear-gradient(90deg, #673580 0.5%, #A626D3 100%);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center ;
+  justify-content: left;
+}
+
+.img{
+  width: 40px;
+  margin-left: 25px;
+  margin-right: 10px;
+}
+.header > h2 {
+  font-family: "karla";
+  font-weight: 700px;
+  font-size: 27px;
+  color: white;
+  word-spacing: -2px;
+}

@@ -1,0 +1,34 @@
+.meme{
+  margin-top: 60px;
+
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form{
+    width: 87%;
+   
+}
+.inp-container > input{
+  height: 40px;
+  width: 400px;
+  border-radius: 8px;
+}
+#inp1{
+  margin-right: 20px;
+}
+
+.inputs  {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+
+
+.inp-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

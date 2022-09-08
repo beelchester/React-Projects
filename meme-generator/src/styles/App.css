@@ -7,10 +7,11 @@ body{
 }
 
 .app{
+  margin-top: -10px;
   display: flex;
   align-items: center ;
   justify-content: center;
   /* background-color: aqua; */
-  height: 100vh;
+  height: 800px;
   width: 600px;
 }

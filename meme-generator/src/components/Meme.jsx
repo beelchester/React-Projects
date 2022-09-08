@@ -1,14 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import "../styles/Meme.css"
 import "../styles/Button.css";
 import memesData from "../memesData"
 export default function Meme(props) {
-  let url
+
+  const [imageUrl, setImageUrl] = useState("")  
+
   function clickHandler(){
     const memesArray = memesData.data.memes
     const randomNum = Math.floor(Math.random() * memesArray.length)
-    url = memesArray[randomNum].url
-    console.log(url)
+    let url = memesArray[randomNum].url
+    setImageUrl(url)
   }
 
   return <div className="meme">
@@ -19,6 +21,9 @@ export default function Meme(props) {
       </div>
       <div className="button-body">
       <button className="button" type="button" onClick={clickHandler}>Get a new meme image </button>
+    </div>
+    <div className="img-container">
+    <img src={imageUrl} className="meme-image"/>
     </div>
     </form>
   </div>;

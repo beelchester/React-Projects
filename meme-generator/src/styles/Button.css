@@ -17,3 +17,10 @@ font-size: 17px;
   justify-content: center;
   align-items: center;
 }
+
+.button:hover{
+font-size: 17.3px;
+}
+.button:active{
+  background: linear-gradient(90deg, #673580 5%, #A626D3 140%);
+}

@@ -1,36 +1,37 @@
 import React, { useState } from "react";
 import "../styles/Meme.css";
 import "../styles/Button.css";
-import memesData from "../memesData";
-export default function Meme(props) {
-  const memesArray = memesData.data.memes;
-  const randomNum = Math.floor(Math.random() * memesArray.length);
-  let url = memesArray[randomNum].url;
+
+export default function Meme() {
+  const [allMemes, setAllMemes] = React.useState([]);
+  React.useEffect(() => {
+    fetch("https://api.imgflip.com/get_memes")
+      .then((response) => response.json())
+      .then((data) => setAllMemes(data.data.memes));
+  }, []);
 
   const [meme, setMeme] = React.useState({
     topText: "",
     bottomText: "",
-    randomImage: url,
+    randomImage: "",
   });
-  const [imageUrl, setImageUrl] = useState("");
 
-  function changeHandler(event) {
-    const { name, value } = event.target;
-    setMeme((prev) => {
-      return {
-        ...prev,
-        [name]: value,
-      };
-    });
-  }
-
-  function clickHandler() {
-    setImageUrl(url);
+  function getMemeImage() {
+    const memesArray = allMemes;
+    const randomNumber = Math.floor(Math.random() * memesArray.length);
+    let url = memesArray[randomNumber].url;
     setMeme((prevMeme) => ({
       ...prevMeme,
       randomImage: url,
     }));
-    console.log(meme);
+  }
+
+  function handleChange(event) {
+    const { name, value } = event.target;
+    setMeme((prevMeme) => ({
+      ...prevMeme,
+      [name]: value,
+    }));
   }
 
   return (
@@ -44,7 +45,7 @@ export default function Meme(props) {
             placeholder="Top Text"
             name="topText"
             value={meme.topText}
-            onChange={changeHandler}
+            onChange={handleChange}
           />
           <input
             className="inputs"
@@ -53,11 +54,11 @@ export default function Meme(props) {
             placeholder="Bottom Text"
             name="bottomText"
             value={meme.bottomText}
-            onChange={changeHandler}
+            onChange={handleChange}
           />
         </div>
         <div className="button-body">
-          <button className="button" type="button" onClick={clickHandler}>
+          <button className="button" type="button" onClick={getMemeImage}>
             Get a new meme image
           </button>
         </div>

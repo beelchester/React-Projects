@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/Meme.css";
 import "../styles/Button.css";
 
 export default function Meme() {
-  const [allMemes, setAllMemes] = React.useState([]);
-  React.useEffect(() => {
+  const [allMemes, setAllMemes] = React.useState([{
+    "id": "79132341",
+    "name": "Bike Fall",
+    "url": "https://i.imgflip.com/1b42wl.jpg",
+    "width": 500,
+    "height": 680,
+    "box_count": 3
+  }]);
+  React.useLayoutEffect(() => {
     fetch("https://api.imgflip.com/get_memes")
       .then((response) => response.json())
       .then((data) => setAllMemes(data.data.memes));
@@ -16,7 +23,9 @@ export default function Meme() {
     randomImage: "",
   });
 
+
   function getMemeImage() {
+
     const memesArray = allMemes;
     const randomNumber = Math.floor(Math.random() * memesArray.length);
     let url = memesArray[randomNumber].url;
@@ -25,6 +34,11 @@ export default function Meme() {
       randomImage: url,
     }));
   }
+useEffect(() => {
+
+ getMemeImage()
+}, [])
+
 
   function handleChange(event) {
     const { name, value } = event.target;

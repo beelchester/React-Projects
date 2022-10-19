@@ -14,3 +14,13 @@ Referred from [Scrimba](https://scrimba.com/)
 ![Screenshot from 2022-09-04 18-00-58](https://user-images.githubusercontent.com/73148455/188314243-efa8b2e8-4d88-44bc-8599-0a45f169aee4.png)
 #### [Netlify link](https://63149deb9c4ac3460372c589--jolly-froyo-1c0586.netlify.app)
 Referred from [Scrimba](https://scrimba.com/)
+
+## 4. [Attendance-Criteria-Manager](https://github.com/sahilyeole/Attendance-Criteria-Manager)
+![acm](https://user-images.githubusercontent.com/73148455/196762488-dce29c78-30cf-45f9-8a7c-d110634cbc84.gif)
+#### [Netlify link](attendance-criteria-manager.netlify.app/)
+
+## 5. [cryptocurrency-tracker](https://github.com/sahilyeole/cryptocurrency-tracker)
+![crypt](https://user-images.githubusercontent.com/73148455/196762638-41ffd8c8-6d3c-42f0-973f-a6e5dd41957c.gif)
+#### [Netlify link](https://cryptocurrency-tracker-sahil.netlify.app/)
+
+
